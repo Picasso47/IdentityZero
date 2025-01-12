@@ -1,3 +1,10 @@
+;use the follwing commands to compile and make a executable
+;nasm -f elf64 -o kernel.o kernel.asm
+;ld -o kernel.exe kernel.o
+;objdump -M intel -d kernel.exe
+;NOTE: ONLY FOR EDUCATIONAL PURPOSE
+
+
 section .data
 
 section .bss
