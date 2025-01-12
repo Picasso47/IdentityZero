@@ -19,7 +19,3 @@ _start:
     push QWORD [rax]
     pop rax                 ;inmemordermodulelist of 1st LDR_DATA_TABLE_ENTRY->my.exe
     mov rax,[rax+0x20]      ;base address of kernel32.dll
-    xor rbx,rbx
-    mov bx,0x70B
-    shl ebx,8    
-    add rax,rbx
