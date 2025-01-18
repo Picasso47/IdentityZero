@@ -26,7 +26,7 @@ _start:
     pop rax                 ;inmemordermodulelist of 1st LDR_DATA_TABLE_ENTRY->my.exe
     mov rax,[rax+0x20]      ;base address of kernel32.dll
     xor rdx,rdx
-    mov edx,0x4F3c0         ;bx=WinexecAddress-Kernel32BaseAddress -> 4F3c0
+    mov edx,0x4F3c0         ;bx=Beep()-Kernel32BaseAddress -> 4F3c0
     ;mov edx,0x4F3c0         ;bx=WinexecAddress-Kernel32BaseAddress -> 70B00
     ;shl edx,8               ;70B --> 70B00
     add rax,rdx             ;Winexec
