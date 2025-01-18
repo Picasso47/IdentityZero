@@ -1,3 +1,9 @@
+;use the follwing commands to compile and make a executable
+;nasm -f elf64 -o beep.o beep.asm
+;ld -o beep.exe beep.o
+;objdump -M intel -d beep.exe -> only for seeing shellcode , step can be skipped
+;NOTE: ONLY FOR EDUCATIONAL PURPOSE
+
 section .data
 
 section .bss
