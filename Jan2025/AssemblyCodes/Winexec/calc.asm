@@ -1,3 +1,9 @@
+;use the follwing commands to compile and make a executable
+;nasm -f elf64 -o calc.o calc.asm
+;ld -o calc.exe calc.o
+;objdump -M intel -d kerne.exe
+;NOTE: ONLY FOR EDUCATIONAL PURPOSE
+
 section .data
 my_str db "calc.exe",0
 
